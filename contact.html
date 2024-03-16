@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HealthGenie</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        
+        <h2>Contact Us</h2>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="profile.html">Profile</a>
+            <a href="recommendations.html">Recommendations</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="contact-container" style="background-image: url('image1.png');">
+        <div class="contact-overlay"></div>
+        <div class="contact-content">
+            <h2>Send us a Message</h2>
+            <form action="submit_contact.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>If you prefer to reach out to us directly, you can contact us via:</p>
+                <ul>
+                    <li>Email: info@healthcoach.com</li>
+                    <li>Phone: 9876543210</li>
+                    <li>Address: Sector 23, Camp Road, Mumbai, 420356</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>Health Coach</h1>
+        
+    </footer>
+</body>
+</html>
